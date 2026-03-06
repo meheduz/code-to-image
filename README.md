@@ -1,7 +1,7 @@
-# code-to-image
+# @meheduz/code-to-image
 
-[![npm version](https://img.shields.io/npm/v/code-to-image.svg)](https://www.npmjs.com/package/code-to-image)
-[![npm downloads](https://img.shields.io/npm/dm/code-to-image.svg)](https://www.npmjs.com/package/code-to-image)
+[![npm version](https://img.shields.io/npm/v/@meheduz/code-to-image.svg)](https://www.npmjs.com/package/@meheduz/code-to-image)
+[![npm downloads](https://img.shields.io/npm/dm/@meheduz/code-to-image.svg)](https://www.npmjs.com/package/@meheduz/code-to-image)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Transform your code into beautiful shareable images — perfect for Twitter, LinkedIn, and blogs!
@@ -9,13 +9,13 @@
 ## Quick Start
 
 ```bash
-npx code-to-image myfile.js
+npx @meheduz/code-to-image myfile.js
 ```
 
 Or with custom options:
 
 ```bash
-npx code-to-image code.py --theme dracula --output screenshot.png
+npx @meheduz/code-to-image code.py --theme dracula --output screenshot.png
 ```
 
 ## Features
@@ -47,37 +47,37 @@ npx code-to-image code.py --theme dracula --output screenshot.png
 
 ### Basic Usage
 ```bash
-npx code-to-image app.js
+npx @meheduz/code-to-image app.js
 ```
 
 ### Custom Theme
 ```bash
-npx code-to-image code.py --theme monokai
+npx @meheduz/code-to-image code.py --theme monokai
 ```
 
 ### Custom Output Name
 ```bash
-npx code-to-image index.ts --output my-awesome-code.png
+npx @meheduz/code-to-image index.ts --output my-awesome-code.png
 ```
 
 ### Specify Language
 ```bash
-npx code-to-image script.txt --lang javascript
+npx @meheduz/code-to-image script.txt --lang javascript
 ```
 
 ### High-res Retina Output
 ```bash
-npx code-to-image app.js --scale 3
+npx @meheduz/code-to-image app.js --scale 3
 ```
 
 ### Hide Line Numbers
 ```bash
-npx code-to-image app.js --no-line-numbers
+npx @meheduz/code-to-image app.js --no-line-numbers
 ```
 
 ### All Options
 ```bash
-npx code-to-image file.js --theme one-dark --output result.png --lang typescript --scale 2
+npx @meheduz/code-to-image file.js --theme one-dark --output result.png --lang typescript --scale 2
 ```
 
 ## CLI Options
@@ -114,22 +114,22 @@ JavaScript, TypeScript, Python, Java, C++, C#, Go, Rust, Ruby, PHP, Swift, Kotli
 
 ### NPX (Recommended)
 ```bash
-npx code-to-image file.js
+npx @meheduz/code-to-image file.js
 ```
 
 ### Global Install
 ```bash
-npm install -g code-to-image
+npm install -g @meheduz/code-to-image
 code-to-image file.js
 ```
 
 ### As a Library
 ```bash
-npm install code-to-image
+npm install @meheduz/code-to-image
 ```
 
 ```javascript
-const { generateImage, themes } = require('code-to-image');
+const { generateImage, themes } = require('@meheduz/code-to-image');
 
 const png = generateImage({
   code: 'console.log("Hello, world!");',
@@ -167,6 +167,10 @@ MIT © [meheduz](https://github.com/meheduz)
 
 ## Links
 
-- [NPM Package](https://www.npmjs.com/package/code-to-image)
+- [NPM Package](https://www.npmjs.com/package/@meheduz/code-to-image)
 - [GitHub Repository](https://github.com/meheduz/code-to-image)
 - [Report Issues](https://github.com/meheduz/code-to-image/issues)
+
+---
+
+v1.0.0
