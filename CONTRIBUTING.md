@@ -1,6 +1,6 @@
 # Contributing to code-to-image
 
-Thank you for your interest in contributing! 🎉
+Thank you for your interest in contributing!
 
 ## How to Contribute
 
@@ -14,13 +14,13 @@ Thank you for your interest in contributing! 🎉
 
 ## Ideas for Contributions
 
-- 🎨 Add new themes
-- 🌐 Support more languages
-- ✨ Add line numbers option
-- 🖼️ Add custom fonts
-- 📏 Add padding/margin options
-- 🔤 Add watermark feature
-- 📊 Add different export formats (SVG, JPEG)
+- Add new themes
+- Support more languages
+- Add line numbers option
+- Add custom fonts
+- Add padding/margin options
+- Add watermark feature
+- Add different export formats (SVG, JPEG)
 
 ## Development Setup
 

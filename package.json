@@ -1,14 +1,15 @@
 {
-  "name": "code-to-image",
-  "version": "1.1.0",
-  "description": "📸 Transform code into beautiful shareable images",
+  "name": "@meheduz/code-to-image",
+  "version": "1.0.0",
+  "description": "Transform code into beautiful shareable images",
   "main": "index.js",
   "bin": {
-    "code-to-image": "./index.js",
-    "code2img": "./index.js"
+    "code-to-image": "index.js",
+    "code2img": "index.js"
   },
   "scripts": {
-    "test": "node index.js test.js"
+    "test": "node index.js test.js",
+    "test:themes": "node index.js test.js --theme monokai --output monokai.png && node index.js test.js --theme github --output github.png && node index.js test.js --theme nord --output nord.png"
   },
   "keywords": [
     "code",
@@ -26,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meheduz/code-to-image.git"
+    "url": "git+https://github.com/meheduz/code-to-image.git"
   },
   "bugs": {
     "url": "https://github.com/meheduz/code-to-image/issues"

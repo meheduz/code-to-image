@@ -1,12 +1,12 @@
-# 📸 code-to-image
+# code-to-image
 
 [![npm version](https://img.shields.io/npm/v/code-to-image.svg)](https://www.npmjs.com/package/code-to-image)
 [![npm downloads](https://img.shields.io/npm/dm/code-to-image.svg)](https://www.npmjs.com/package/code-to-image)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> 📸 Transform your code into beautiful shareable images - perfect for Twitter, LinkedIn, and blogs!
+> Transform your code into beautiful shareable images — perfect for Twitter, LinkedIn, and blogs!
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 npx code-to-image myfile.js
@@ -18,18 +18,21 @@ Or with custom options:
 npx code-to-image code.py --theme dracula --output screenshot.png
 ```
 
-## ✨ Features
+## Features
 
-- 🎨 **4 Beautiful Themes** - Dracula, Monokai, GitHub, Nord
-- 🌈 **Syntax Highlighting** - 180+ languages supported
-- 📐 **Auto-sizing** - Perfect dimensions every time
-- 💾 **PNG Export** - High-quality output
-- ⚡ **Lightning Fast** - Generate in seconds
-- 🎯 **Social Media Ready** - Optimized for sharing
-- 🪟 **macOS Window Style** - Beautiful window controls
-- 💻 **Cross-Platform** - Works on macOS, Linux, Windows
+- **6 Beautiful Themes** — Dracula, Monokai, GitHub, Nord, One Dark, Solarized Dark
+- **Syntax Highlighting** — 180+ languages with accurate per-theme color maps
+- **Line Numbers** — Toggle with `--no-line-numbers`
+- **Auto-sizing** — Perfect dimensions every time
+- **Retina Ready** — `--scale 1|2|3` for crisp output (default: 2x)
+- **PNG Export** — High-quality output
+- **Fast** — Generate in seconds
+- **Social Media Ready** — Optimized for sharing
+- **macOS Window Style** — Rounded corners, shadow, traffic-light controls
+- **Cross-Platform** — Works on macOS, Linux, Windows
+- **Programmatic API** — Use as a library in your own projects
 
-## 🎨 Available Themes
+## Available Themes
 
 | Theme | Style | Best For |
 |-------|-------|----------|
@@ -37,8 +40,10 @@ npx code-to-image code.py --theme dracula --output screenshot.png
 | `monokai` | Classic dark | GitHub, Dev.to |
 | `github` | Light | LinkedIn, Medium |
 | `nord` | Cool blue | Personal blogs |
+| `one-dark` | Atom-inspired | Clean dark look |
+| `solarized-dark` | Warm dark | Terminal lovers |
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Basic Usage
 ```bash
@@ -60,38 +65,52 @@ npx code-to-image index.ts --output my-awesome-code.png
 npx code-to-image script.txt --lang javascript
 ```
 
-### All Options
+### High-res Retina Output
 ```bash
-npx code-to-image file.js --theme nord --output result.png --lang typescript
+npx code-to-image app.js --scale 3
 ```
 
-## 🛠️ CLI Options
+### Hide Line Numbers
+```bash
+npx code-to-image app.js --no-line-numbers
+```
+
+### All Options
+```bash
+npx code-to-image file.js --theme one-dark --output result.png --lang typescript --scale 2
+```
+
+## CLI Options
 
 ```
 code-to-image <file> [options]
 
 Options:
-  --theme <name>    Theme: dracula, monokai, github, nord (default: dracula)
-  --output <file>   Output filename (default: code-screenshot.png)
-  --lang <name>     Force language for syntax highlighting
-  --help, -h        Show help
-  --version, -v     Show version
+  --theme <name>      Theme (default: dracula)
+                      dracula, monokai, github, nord, one-dark, solarized-dark
+  --output <file>     Output filename (default: code-screenshot.png)
+  --lang <name>       Force language for syntax highlighting
+  --scale <number>    Resolution scale: 1, 2, or 3 (default: 2)
+  --no-line-numbers   Hide line numbers
+  --tab-size <n>      Tab width in spaces (default: 2)
+  --help, -h          Show help
+  --version, -v       Show version
 ```
 
-## 🌍 Supported Languages
+## Supported Languages
 
 JavaScript, TypeScript, Python, Java, C++, C#, Go, Rust, Ruby, PHP, Swift, Kotlin, Scala, HTML, CSS, SQL, Bash, and 160+ more!
 
-## 🎯 Use Cases
+## Use Cases
 
-- 📱 Share code snippets on Twitter/LinkedIn
-- 📝 Add beautiful code examples to blog posts
-- 🎓 Create programming tutorials
-- 📊 Include in presentations
-- 💼 Portfolio projects showcase
-- 📚 Documentation with visual examples
+- Share code snippets on Twitter/LinkedIn
+- Add beautiful code examples to blog posts
+- Create programming tutorials
+- Include in presentations
+- Portfolio projects showcase
+- Documentation with visual examples
 
-## 🚀 Installation
+## Installation
 
 ### NPX (Recommended)
 ```bash
@@ -104,12 +123,27 @@ npm install -g code-to-image
 code-to-image file.js
 ```
 
-### As Dependency
+### As a Library
 ```bash
 npm install code-to-image
 ```
 
-## 🤝 Contributing
+```javascript
+const { generateImage, themes } = require('code-to-image');
+
+const png = generateImage({
+  code: 'console.log("Hello, world!");',
+  language: 'javascript',
+  theme: 'dracula',
+  fileName: 'hello.js',
+  showLineNumbers: true,
+  scale: 2,
+});
+
+fs.writeFileSync('output.png', png);
+```
+
+## Contributing
 
 Contributions welcome! Here's how:
 
@@ -124,20 +158,15 @@ Contributions welcome! Here's how:
 - Support more languages
 - Add custom fonts
 - Add watermark option
-- Add line numbers
+- SVG / JPEG export formats
+- Custom background images
 
-## 📄 License
+## License
 
 MIT © [meheduz](https://github.com/meheduz)
 
-## 🔗 Links
+## Links
 
 - [NPM Package](https://www.npmjs.com/package/code-to-image)
 - [GitHub Repository](https://github.com/meheduz/code-to-image)
 - [Report Issues](https://github.com/meheduz/code-to-image/issues)
-
----
-
-**Made with ❤️ for developers who love to share beautiful code**
-
-*Star ⭐ this repo if you find it useful!*
