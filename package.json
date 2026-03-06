@@ -1,0 +1,43 @@
+{
+  "name": "code-to-image",
+  "version": "1.1.0",
+  "description": "📸 Transform code into beautiful shareable images",
+  "main": "index.js",
+  "bin": {
+    "code-to-image": "./index.js",
+    "code2img": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js test.js"
+  },
+  "keywords": [
+    "code",
+    "screenshot",
+    "image",
+    "syntax",
+    "highlight",
+    "share",
+    "twitter",
+    "carbon",
+    "code-snippet",
+    "png"
+  ],
+  "author": "Meheduzzaman <meheduz@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meheduz/code-to-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meheduz/code-to-image/issues"
+  },
+  "homepage": "https://github.com/meheduz/code-to-image#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "canvas": "^2.11.2",
+    "highlight.js": "^11.9.0"
+  }
+}
